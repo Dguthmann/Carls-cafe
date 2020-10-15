@@ -16,6 +16,7 @@ router.get("/", function(req, res) {
   });
 });
 
+// Post route for making new burgers
 router.post("/api/burgers", function(req, res) {
   burger.create("name", req.body.name, function(result) {
     // Send back the ID of the new burger
@@ -23,11 +24,12 @@ router.post("/api/burgers", function(req, res) {
   });
 });
 
+// Put route for moving the eaten burgers into the queue so the plates can be taken away
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
-
+  // Call the update function in the burger.js
   burger.update({
     eaten: req.body.eaten
   }, condition, function(result) {
@@ -40,6 +42,7 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
+// Delete Route for clearing the empty plate from the burger
 router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
