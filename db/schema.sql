@@ -1,5 +1,3 @@
-### Schema
-
 CREATE DATABASE carls_db;
 USE carls_db;
 
