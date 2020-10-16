@@ -1,7 +1,10 @@
-<h1>Carls Cafe!</h1>
-
-<h2>Burgers to eat!</h2>
-
+<h1>Welcome to Carl's Cafe</h1>
+{{!-- <img src="../public/assets/pics/carlslogo.gif" alt="Carls Logo"> --}}
+{{!-- <div class="container"> --}}
+  <img src="../public/assets/pics/burger.jpg" alt="Carls Logo">
+  <div class="row">
+<div class="col-md-4">
+  <h2>Burgers Ready to Eat!</h2>
 <ul>
   {{#each burgers}}
     {{#unless eaten}}
@@ -9,18 +12,10 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Burgers I've eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
+<div class="col-md-4">
+<h2>Order a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -30,3 +25,17 @@
 
   <button type="submit">Add Burger</button>
 </form>
+</div>
+<div class="col-md-4">
+<h2>Empty Burgers Plates</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if eaten}}
+      {{> burgers/burger-block eaten=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+</div>
+</div>

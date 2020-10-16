@@ -1,12 +1,12 @@
 <li>
 	{{name}}
 	{{#if eaten}}
-	<button class="change-eaten" data-id="{{id}}" data-newsleep="{{sleep}}">
-	Eat Burger!
+	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
+	Consume
 	</button>
 	{{else}}
 	<button class="delete-plate" data-id="{{this.id}}">
-	Clear Empty Plate.
+	Clear My Plate.
 	</button>
 	{{/if}}
 </li>
