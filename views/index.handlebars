@@ -1,41 +1,45 @@
-<h1>Welcome to Carl's Cafe</h1>
-{{!-- <img src="../public/assets/pics/carlslogo.gif" alt="Carls Logo"> --}}
-{{!-- <div class="container"> --}}
-  <img src="../public/assets/pics/burger.jpg" alt="Carls Logo">
+<img src="/assets/pics/carlslogo.gif" alt="Carls Logo" class="mx-auto d-block" id="logo">
+<div class="container">
   <div class="row">
-<div class="col-md-4">
-  <h2>Burgers Ready to Eat!</h2>
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-</div>
-
-<div class="col-md-4">
-<h2>Order a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <img src="/assets/pics/burger.jpg" alt="burger time" class="mx-auto d-block" id="burgerpic">
   </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>Burgers Ready to Eat!</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless eaten}}
+        {{> burgers/burger-block eaten=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+      <br>
+    </div>
 
-  <button type="submit">Add Burger</button>
-</form>
-</div>
-<div class="col-md-4">
-<h2>Empty Burgers Plates</h2>
+    <div class="col-lg-4">
+      <h2>Order a Burger</h2>
+      <form class="create-form">
 
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-</div>
+        <div class="form-group">
+          <label for="ca">Burger Name:</label>
+          <input type="text" id="ca" name="name">
+        </div>
+
+        <button type="submit">Add Burger</button>
+      </form>
+      <br>
+    </div>
+    <div class="col-lg-4">
+      <h2>Empty Burgers Plates</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if eaten}}
+        {{> burgers/burger-block eaten=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+      <br>
+    </div>
+  </div>
 </div>
