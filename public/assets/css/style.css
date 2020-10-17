@@ -9,9 +9,27 @@ h1{
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #b817a0;
 }
 
+.plate{
+  text-align: center;
+}
+
+.burger-title {
+  text-align: right;
+}
+
+.btn{
+  background-color: white;
+  color: black;
+  align-content: center;
+}
+
+.btn:hover{
+background-color: black;
+color: white;
+}
 
 .label {
   font-weight: bold;
@@ -27,8 +45,20 @@ li {
   margin-bottom: 5px;
 }
 
-.col-lg-4{
-  background-color: white;
+
+.col-lg-3{
+  color: #9fb817;
+  background-color: black;
+}
+
+
+.col-lg{
+  color: #9fb817;
+  background-color: black;
+}
+
+.col-md-9{
+  color:white;
 }
 
 #logo {

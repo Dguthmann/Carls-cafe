@@ -3,9 +3,10 @@
   <div class="row">
     <img src="/assets/pics/burger.jpg" alt="burger time" class="mx-auto d-block" id="burgerpic">
   </div>
+  <br>
   <div class="row">
-    <div class="col-lg-4">
-      <h2>Burgers Ready to Eat!</h2>
+    <div class="col-lg">
+      <h2 class="plate">Burgers Ready to Enjoy</h2>
       <ul>
         {{#each burgers}}
         {{#unless eaten}}
@@ -16,12 +17,13 @@
       <br>
     </div>
 
-    <div class="col-lg-4">
-      <h2>Order a Burger</h2>
-      <form class="create-form">
+    <div class="col-lg-3">
+      <h2 class="plate">Order a Burger</h2>
+      <form class="create-form plate">
 
         <div class="form-group">
           <label for="ca">Burger Name:</label>
+          <br>
           <input type="text" id="ca" name="name">
         </div>
 
@@ -29,8 +31,8 @@
       </form>
       <br>
     </div>
-    <div class="col-lg-4">
-      <h2>Empty Burgers Plates</h2>
+    <div class="col-lg">
+      <h2 class="plate">Empty Plates</h2>
 
       <ul>
         {{#each burgers}}
