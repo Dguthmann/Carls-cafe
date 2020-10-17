@@ -11,8 +11,6 @@ livesite: https://dg-carlscafe.herokuapp.com/
 server.js  
 package.json  
 package-lock.json  
-screenshot.png  
-screenshot2.png  
 README.md  
 LICENSE
 ### config  
@@ -34,6 +32,8 @@ burgers.js
 ##### pics  
 burger.jpg  
 carlslogo.gif  
+screenshot.png  
+screenshot2.png  
 ### views  
 index.handlebars  
 #### layouts  
@@ -59,10 +59,10 @@ The goal of the project is to model a burger shop where users can make an order,
 
 ## Screenshot of Project
 
-![Site Screenshot](screenshot.png)  
+![Site Screenshot](./public/assets/pics/screenshot.png)  
 
 
-![Site Screenshot](screenshot2.png)  
+![Site Screenshot](./public/assets/pics/screenshot2.png)  
 
 
 ## Resources Used
